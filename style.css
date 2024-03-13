@@ -1,77 +1,102 @@
-body {
+html {
     box-sizing: border-box;
-    background-color: rgb(209, 207, 205);
+    min-height: 100vh;
 }
 *,*::before,*::after {
-    margin: 0;
-    padding: 0;
     box-sizing: inherit;
 }
 
-#wrapper {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.form-input {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-fieldset , .mytodolist{
-    background-color: aliceblue;
-    min-width: 350px;
-    min-height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px black;
-
-}
-
-input[type="text"]{
-    width: 300px;
-    height: 50px;
-    margin: 12px 0;
+body {
+    background: rgb(80, 94, 101);
     font-size: 1.5rem;
+    
 }
-button {
-    width: 300px;
-    height: 40px;
-    margin: 12px 0;
-    font-weight: bolder;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.todolist h1 {
-    margin: 20px 0;
+.content-block {
+    min-width: 30%;
+    padding-top: 2rem;
 }
-.todolist {
-    text-align: center;
-    min-height: 100px;
-    margin-top: 3rem;
+.inputblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0 2rem 2rem 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    padding-left:1rem ;
 }
 
+input:first-child {
+    height: 3rem;
+    border: 0;
+    border-radius: 6px;
+    
+}
+::placeholder {
+    padding-left: .5rem;
+    font-size: 1.1rem;
+}
+
+#button {
+    height: 3rem;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.4rem;
+}
+#button:hover {
+    cursor: pointer;
+}
 ul {
+    min-height: 3rem;
     display: flex;
     flex-direction: column-reverse;
-    align-items: flex-start;
+    padding: 0 1.5rem 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 1.6rem;
 }
+
 ul li {
-    /* list-style: none; */
-    min-width: 200px;
-    font-size: 1.5rem;
-    background-color: rgb(209, 207, 205);
-    padding: 3px 20px;
-    margin: 3px 0;
-    border-radius: 8px;
-    text-align: left;
+    list-style-type: square;
+    background-color: rgb(159, 161, 161);
+    margin: 1rem 1rem 0 1rem;
+    padding-left: 0.5rem;
+    border-radius: 6px;
+    position: relative;
+}
+ul li:hover {
+    cursor: pointer;
+}
+
+
+.todolistblock h2{
+    margin-top: 4rem;
+    text-align: center;
+}
+span {
+    position: absolute;
+    right: .3rem;
+    top: -0.6rem;
+    transform: rotate(45deg);
+    font-size: 2.5rem;
+  
+   color: brown;
 }

@@ -2,34 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Todo-List</title>
+   <link rel="stylesheet" href="style.css">
+    <title>ToDo</title>
 </head>
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
+        <div class="content-block">
+        <div class="inputblock">
+                <h2 class="heading">New Todo</h2>
+                <form>
+                    <input type="text" name="text" id="" placeholder="Add ToDo">
+                    <button id="button">Add Todo</button>
+                </form>
+            </div>
 
-        <div class="form-input">
-            <form action="#">
-           <fieldset><legend></legend>
-                   <h1>New List</h1>
-               <input class="userinput" type="text">
-               <button class="btn"">Add ToTo</button></fieldset>
-       </form>
+                <div class="todolistblock">
+                    <h2>My ToDo List</h2>
+                    <ul class="ul"></ul>
+                </div>
+            </div>
         </div>
-       <div class="todolist">
-           <h1>My Todo List</h1>
-           <div class="mytodolist">
-               <ul class="list">
-                   
-               </ul>
-           </div>
-           
-       </div>
-    </div>
     
-<script async src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
